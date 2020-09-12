@@ -52,8 +52,12 @@
     "typescript": "^3.9.5"
   },
   "peerDependencies": {},
-  "dependencies": {},
-  "bundledDependencies": [],
+  "dependencies": {
+    "aws-sdk": "^2.708.0"
+  },
+  "bundledDependencies": [
+    "aws-sdk"
+  ],
   "keywords": [],
   "engines": {
     "node": ">= 10.17.0"
@@ -135,10 +139,18 @@
       }
     }
   },
-  "stability": "stable",
+  "stability": "experimental",
   "jsii": {
     "outdir": "dist",
-    "targets": {},
+    "targets": {
+      "java": {
+        "package": "com.acme.hello",
+        "maven": {
+          "groupId": "com.acme.hello",
+          "artifactId": "jsii-playground"
+        }
+      }
+    },
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"
