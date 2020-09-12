@@ -8,7 +8,7 @@ export class Hello {
   /**
    * test
    */
-  public async putToQueue(messageBody: string, queueURL: string): Promise<string> {
+  public async putToQueue(messageBody: string, queueURL: string): Promise<SQS.SendMessageResult> {
     const url = queueURL || process.env.TASK_PIPE;
     if (!url) {
       throw new Error('Missing queue URL');
@@ -21,6 +21,6 @@ export class Hello {
     console.log(params);
     const sqsData: SQS.SendMessageResult = await new SQS().sendMessage(params).promise();
     console.log(sqsData);
-    return JSON.stringify(sqsData);
+    return sqsData;
   }
 }
