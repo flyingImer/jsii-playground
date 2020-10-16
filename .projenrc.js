@@ -1,8 +1,9 @@
-const { JsiiProject, Semver } = require('projen');
+const { JsiiProject, Semver, Stability } = require('projen');
 
 const project = new JsiiProject({
   name: 'jsii-playground',
-  stability: 'experimental',
+  stability: Stability.EXPERIMENTAL,
+  compat: true,
   
   authorName: 'Ej Wang',
   authorEmail: 'ej.wang.dev@gmail.com',

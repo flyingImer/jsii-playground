@@ -51,7 +51,7 @@ tsconfig.json
 !/.mergify.yml
 !/.github/dependabot.yml
 !/src
-!/.eslintrc.json
 !/tsconfig.jest.json
 !/test
+!/.eslintrc.json
 !/API.md
