@@ -2,7 +2,7 @@ import * as SQS from 'aws-sdk/clients/sqs';
 
 export class Hello {
   public async sayHello() {
-    return 'hello, world!'
+    return 'hello, world!';
   }
 
   /**
@@ -17,7 +17,7 @@ export class Hello {
       MessageBody: messageBody,
       QueueUrl: url,
     };
-  
+
     console.log(params);
     const sqsData: SQS.SendMessageResult = await new SQS().sendMessage(params).promise();
     console.log(sqsData);
