@@ -149,7 +149,7 @@
       "java": {
         "package": "com.acme.hello",
         "maven": {
-          "groupId": "com.acme.hello",
+          "groupId": "com.acme",
           "artifactId": "jsii-playground"
         }
       }
