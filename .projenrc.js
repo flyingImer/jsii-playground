@@ -18,7 +18,7 @@ const project = new JsiiProject({
 
   java: {
     javaPackage: 'com.acme.hello',
-    mavenGroupId: 'com.acme.hello',
+    mavenGroupId: 'com.acme',
     mavenArtifactId: 'jsii-playground',
   }
 });
